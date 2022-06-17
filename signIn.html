@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #main {
+        width: 100%;
+      }
+
+      #form {
+        border: 1px solid transparent;
+        width: 400px;
+        height: 500px;
+        margin: auto;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        border-radius: 10px;
+        margin-top: 90px;
+      }
+
+      #img {
+        width: 50%;
+        margin: auto;
+        margin-top: 50px;
+      }
+      #container {
+        display: grid;
+        gap: 10px;
+        padding: 6%;
+      }
+      #container > input {
+        width: 90%;
+        height: 40px;
+        border-radius: 5px;
+      }
+      #container > p {
+        margin: auto;
+        margin-top: 30px;
+      }
+      #signin {
+        margin-top: 10px;
+        background-color: #d5846f;
+        color: white;
+      }
+      #signin:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <form id="form">
+        <div id="img">
+          <img
+            src="https://accounts.coschedule.com/img/cos-logo-horz.svg"
+            alt="Error"
+          />
+        </div>
+        <div id="container">
+          <lable for="emai">EMAIL ADDRESS</lable>
+          <input type="email" id="email" placeholder="Email Address" />
+          <lable for="password">PASSWORD</lable>
+          <input type="password" id="password" placeholder="Password" />
+          <input type="submit" id="signin" value="Sign In" />
+          <p>
+            <a href="signup.html">Need an account? | </a
+            ><a href="#">Forget your password?</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+  let signinArr = JSON.parse(localStorage.getItem("signupKey")) || [];
+  document.querySelector("form").addEventListener("submit", myFunction);
+
+  console.log(signinArr);
+
+  function myFunction() {
+    event.preventDefault();
+    let EmailAdd = document.querySelector("#email").value;
+    let Pass = document.querySelector("#password").value;
+
+    let flag = false;
+    signinArr.forEach(function (el) {
+      if (EmailAdd == el.oEmail && Pass == el.oPassword) {
+        return (flag = true);
+      }
+    });
+    console.log(flag);
+
+    if (flag) {
+      alert("Great");
+      window.location.href = "homepage.html";
+    } else {
+      alert("Wrong ID/Password");
+      window.location.reload();
+    }
+  }
+</script>

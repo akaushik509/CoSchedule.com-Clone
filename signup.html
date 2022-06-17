@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #form {
+        width: 400px;
+        margin: auto;
+        display: grid;
+        gap: 10px;
+        margin-top: 50px;
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+      #main {
+        width: 500px;
+        margin: auto;
+        text-align: center;
+        line-height: 6px;
+        margin-top: 100px;
+      }
+      input {
+        height: 30px;
+      }
+      button {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        margin-left: 250px;
+        margin-top: 20px;
+        background-color: orangered;
+        color: white;
+        border: 0px;
+        width: 150px;
+        height: 50px;
+      }
+      button:hover {
+        cursor: pointer;
+      }
+      p {
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Create My Marketing Calendar</h1>
+      <p>Free for life. No credit card required.</p>
+    </div>
+    <form id="form">
+      <lable for="name">Full Name</lable>
+      <input id="nameFull" type="text" placeholder="Full Name" />
+      <lable for="Email">Email Address</lable>
+      <input id="addressEmail" type="email" placeholder="Email Address" />
+      <lable for="Cname">Company</lable>
+      <input id="company" type="text" placeholder="Company Name" />
+      <lable for="website">Website URL</lable>
+      <input id="url" type="text" placeholder="Company website URL" />
+      <lable for="password">Password</lable>
+      <input
+        id="pass"
+        type="password"
+        placeholder="Password (minimum 8 characters)"
+      />
+      <button id="btn">Get Started Now</button>
+      <a style="text-decoration: none;" href="signin.html" >Sign In</a>
+      <p>
+        By clicking "Get Started Now",you agree to CoSchedule's
+        <span
+          ><a href="https://coschedule.com/terms"
+            >terms of service, end user agreement and privacy policy</a
+          ></span
+        >, you are 16 years or older, and you will receive information from
+        CoSchedule from which you can opt out at any time.
+      </p>
+    </form>
+  </body>
+</html>
+
+<script>
+  document.querySelector("form").addEventListener("submit", myFunction);
+  let signupArr = JSON.parse(localStorage.getItem("signupKey")) || [];
+  function myFunction(event) {
+    event.preventDefault();
+
+    let signupObj = {
+      oName: document.querySelector("#nameFull").value,
+      oEmail: document.querySelector("#addressEmail").value,
+      oComp: document.querySelector("#company").value,
+      oUrl: document.querySelector("#url").value,
+      oPassword: document.querySelector("#pass").value,
+    };
+
+    if (
+      signupObj.oEmail == "" ||
+      signupObj.oName == "" ||
+      signupObj.oComp == "" ||
+      signupObj.oUrl == "" ||
+      signupObj.oPassword == ""
+    ) {
+      alert("Please Enter Your Details");
+    } else {
+      if (checkEmail(signupObj.oEmail) === true) {
+        signupArr.push(signupObj);
+        localStorage.setItem("signupKey", JSON.stringify(signupArr));
+        alert("Account Created Successfully To Sign In Click On Sign In  ");
+      }
+    }
+  }
+
+  /*Email validation check*/
+
+  function checkEmail(oEmail) {
+    let filtered = signupArr.filter(function (el) {
+      return oEmail === el.oEmail;
+    });
+    //console.log(filtered);
+    if (filtered.length > 0) {
+      alert("Account Already Exists Click On Sign In");
+      return false;
+    } else {
+      return true;
+    }
+  }
+</script>
