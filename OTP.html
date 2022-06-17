@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(248, 246, 246);
+}
+/* Navbar related css */
+
+
+#submit {
+  width: 70%;
+  margin: auto;
+  background-color: #f37e5d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: -2px;
+}
+
+input,
+select {
+  display: block;
+  margin: 15px 0px;
+  font-size: 20px;
+  padding: 2%;
+}
+
+form {
+  width: 400px;
+  border: 1px solid rgb(230, 230, 230);
+  margin: 3% auto;
+  padding: 3%;
+  background-color: yellow;
+
+}
+/* Form related css */
+h2{
+    margin-bottom: 30px;
+    color: #f37e5d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+label{
+    font-weight: bold;
+    color: #f37e5d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    margin: auto;
+    margin-top: 20px;
+}
+#Rotp{
+  background-color: green;
+  color: white;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <form action="" id="form">
+        <h2>Enter OTP below</h2>
+        <label for="OTP">Enter Your OTP</label><br>
+        <input placeholder="Enter OTP" id="otp" name="otp" type="text" /><br>
+        
+        
+        <input id="submit" type="submit" name="submit" value="Submit" />
+        <button id="Rotp">Resend OTP</button>
+      </form>
+     
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",myfunction);
+    function myfunction(){
+        event.preventDefault();
+        let result=document.querySelector("#otp").value;
+        if(result=="1234"){
+            alert("payment successful");
+            window.location.href="Afterpricing.html"
+        }else{
+          alert("wrong OTP 2 times left")
+        }
+    }
+</script>

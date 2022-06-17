@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After Pricing</title>
+    <style>
+    h2{
+     text-align: center;
+     font-family: Arial, Helvetica, sans-serif;
+     color: #4b4b4b;
+    }
+    #one{
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #787878;
+    }
+    #two{
+        color: blue;
+        text-align: center;
+        margin-top: 80px;
+    }
+    #front{
+        width: 240px;
+        height: 100px;
+        border: 3px solid blue;
+        margin: auto;
+        border-radius: 10px;
+        background-color: lightgrey;
+        margin-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    #three{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin-top: 4px;
+        color: #4b4b4b;
+    }
+    #front > div{
+        width: 220px;
+        height: 50px;
+        /* border: 1px solid green; */
+        margin: auto;
+        border-radius: 5px;
+        background-color: white;
+    }
+    #front > div >p{
+        text-align: center;
+        font-weight: bold;
+        color: #4b4b4b;
+        margin-top: 25px;
+    }
+    #down{
+        width: 90%;
+        height: 400px;
+        /* border: 1px solid red; */
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: auto;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+    #none {
+        width: 90%;
+        height: 70px;
+        margin: auto;
+        /* border: 1px solid black; */
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: lightgrey;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    #down > div:nth-child(1){
+        border: 1px solid  lightgrey;
+    }
+    #down > div:nth-child(2){
+        border: 1px solid  lightgrey;
+    }
+    #down > div:nth-child(4){
+        border: 1px solid  lightgrey;
+    }
+    #down > div:nth-child(5){
+        border: 1px solid  lightgrey;
+    }
+    #down > div:nth-child(6){
+        border: 1px solid  lightgrey;
+    }
+    #down > div:nth-child(7){
+        border: 1px solid  lightgrey;
+    }
+    #down > div:nth-child(8){
+        border: 1px solid  lightgrey;
+    }
+    #down > div:nth-child(9){
+        border: 1px solid  lightgrey;
+    }
+    #down > div:nth-child(10){
+        border: 1px solid  lightgrey;
+    }
+
+    #hit{
+        border: 3px solid blue;
+    }
+    </style>
+</head>
+<body>
+    <h2>Plan projects ahead of time to see the big picture</h2>
+    <p id="one">Most successful customers schedule projects at least 7 days in advance, on the day the project goes live.</p>
+    <p id="two">Drag the project card to the 5th</p>
+    <div id="front">
+        <p id="three">Blog Post</p>
+        <div>
+            <p>Monthly Product Feature</p>
+        </div>
+    </div>
+    
+        <div id="none"></div>
+    <div id="down">   
+        <div>3</div>
+        <div>4</div>
+        <div id="hit">5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+</body>
+</html>
