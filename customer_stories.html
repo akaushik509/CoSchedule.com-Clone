@@ -222,6 +222,14 @@
       #foot > div > p {
         width: 100%;
       }
+      #filter {
+        margin-bottom: 50px;
+      }
+      label {
+        margin-left: 50px;
+
+        margin-bottom: 50px;
+      }
     </style>
   </head>
   <body>
@@ -258,6 +266,19 @@
       </p>
     </div>
 
+    <!-- FILTER -->
+    <label for="">FILTER :</label>
+    <select name="filter" id="filter">
+      <option value="All">All</option>
+      <option value="Technology">Technology</option>
+      <option value="Finance and Insurance">Finance & Insurance</option>
+      <option value="Agency">Agency</option>
+      <option value="Higher Education">Higher Education</option>
+      <option value="Hospitality and Tourism">Hospitality & Tourism</option>
+      <option value="Heath & Wellness">Heath & Wellness</option>
+      <option value="B2B">B2B</option>
+      <option value="B2C">B2C</option>
+    </select>
     <!-- Cards section -->
 
     <div id="cards">
@@ -447,7 +468,7 @@
           "https://media.coschedule.com/uploads/2020/04/UofSC_Alumni_P_Vertical_White_Garnet_RGB-02.png",
         info: "This 5-Person Marketing Team Managed 12x More Work While Working Remotely",
         button: "Read More",
-
+        category: "Higher Education",
         href: "https://coschedule.com/customer-stories/uofsc-alumni",
       },
 
@@ -456,7 +477,7 @@
           "https://media.coschedule.com/uploads/umass-memorial-logo-white.png",
         info: "How This Healthcare Company Created Instant Workload Visibility Across 3 Teams With Marketing Suite by CoSchedule",
         button: "Read More",
-
+        category: "B2C",
         href: "https://coschedule.com/customer-stories/umass-memorial",
       },
 
@@ -464,7 +485,7 @@
         img_url: "https://media.coschedule.com/uploads/laerdal-logo-white.png",
         info: "Laerdal’s Global Marketing Team Increased Visibility By Centralizing Their Marketing Efforts with Marketing Suite by CoSchedule",
         button: "Read More",
-
+        category: "B2B",
         href: "https://coschedule.com/customer-stories/laerdal",
       },
 
@@ -473,7 +494,7 @@
           "https://media.coschedule.com/uploads/amp-my-brand-logo-white.png",
         info: "How This Marketing Agency Drives Social Media Growth For 16 Franchisee Clients",
         button: "Read More",
-
+        category: "Agency",
         href: "https://coschedule.com/customer-stories/amp-my-brand",
       },
 
@@ -481,6 +502,7 @@
         img_url: "https://media.coschedule.com/uploads/on24-logo-white.png",
         info: "How One Marketing Team Quadrupled Their Content And Drove 1,412% More Organic Traffic To Their Blog",
         button: "Read More",
+        category: "Technology",
         href: "https://coschedule.com/customer-stories/on24",
       },
 
@@ -488,6 +510,7 @@
         img_url: "https://media.coschedule.com/uploads/graebel-logo-white.png",
         info: "How This Global Brand Transformed Complex, Multi-Tool Marketing Into A Simplified Workflow",
         button: "Read More",
+        category: "B2B",
         href: "https://coschedule.com/customer-stories/graebel",
       },
 
@@ -495,11 +518,16 @@
         img_url: "https://media.coschedule.com/uploads/simpleview-logo-02.png",
         info: "Simpleview Completes 5x More Marketing Projects Every Month Using CoSchedule's Marketing Suite",
         button: "Read More",
+        category: "Technology",
         href: "https://coschedule.com/customer-stories/simpleview",
       },
     ];
+    let cardsCont = document.getElementById("cards");
+
     displayCards(data);
+
     function displayCards(data) {
+      cardsCont.innerHTML = "";
       data.forEach(function (elem) {
         let div = document.createElement("div");
         div.addEventListener("click", function () {
@@ -517,8 +545,19 @@
         button.innerText = elem.button;
 
         div.append(divImg, info, button);
-        document.querySelector("#cards").append(div);
+        cardsCont.append(div);
       });
     }
+    let filter = document.getElementById("filter");
+    filter.addEventListener("change", function () {
+      if (filter.value === "All") {
+        displayCards(data);
+      } else {
+        let filtered = data.filter(function (element) {
+          return element.category === filter.value;
+        });
+        displayCards(filtered);
+      }
+    });
   </script>
 </html>
