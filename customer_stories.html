@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Stories</title>
+    <style>
+      /* <!-- Navbar --> */
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+      #navbar {
+        background-color: #2dc4f3;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0px;
+      }
+      #navbar > .firstHalf {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 0px;
+      }
+      #navbar > .firstHalf > img {
+        width: 20%;
+        cursor: pointer;
+      }
+      #navbar > .firstHalf > div {
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+      }
+      #navbar > .secondHalf {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      #navbar > .secondHalf > div {
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+      }
+      #navbar > .secondHalf > div:last-child {
+        border: 2px solid white;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      /* TOP CONTAINER */
+      #topContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #2dc4f3;
+        color: white;
+        margin-bottom: 100px;
+      }
+      #topContainer > p:first-child {
+        margin-top: 30px;
+        font-size: 17px;
+        margin-bottom: 20px;
+      }
+      #topContainer > h1 {
+        font-size: 50px;
+        margin-bottom: 10px;
+      }
+      #topContainer > p:last-child {
+        margin-top: 10px;
+        font-size: 20px;
+        width: 53%;
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      /* CARDS */
+
+      #cards {
+        width: 60%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px 20px;
+        margin-bottom: 50px;
+      }
+      #cards > div {
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+          rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        font-size: 12px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #cards > div > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #2dc4f3;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      #cards > div > div > img {
+        padding: 15% 30%;
+        width: 70%;
+      }
+      #cards > div > h1 {
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+      #cards > div > p {
+        margin-left: 20px;
+        text-align: left;
+        font-size: 18px;
+        color: #2dc4f3;
+        font-weight: bold;
+        margin-bottom: 50px;
+      }
+      #cards > div:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+
+      /* AD */
+
+      #ad {
+        width: 54%;
+        margin: auto;
+        background-color: #f8a379;
+        text-align: center;
+        padding: 70px;
+        color: white;
+        line-height: 50px;
+        margin-bottom: 100px;
+      }
+      #ad > h1 {
+        font-size: 40px;
+      }
+      #ad > p {
+        font-size: 25px;
+      }
+      #ad > button {
+        margin-top: 25px;
+        padding: 15px 50px;
+        border: 3px solid white;
+        color: white;
+        background-color: #f8a379;
+        font-size: 20px;
+        border-radius: 5px;
+      }
+
+      /* FOOTER */
+
+      #footer {
+        margin: auto;
+        border: 1px solid transparent;
+        background-color: #f8f8f8;
+      }
+
+      #footer p,
+      a {
+        color: grey;
+      }
+      #box8 {
+        width: 70%;
+        display: flex;
+        margin: auto;
+        margin-top: 50px;
+      }
+      #box8 > div {
+        height: 100%;
+        margin-left: 100px;
+      }
+      #container6 {
+        display: flex;
+        border: 1px solid transparent;
+      }
+      #container6 > div > img {
+        width: 1fr;
+        height: 50px;
+        padding: 5px;
+      }
+      #container7 {
+        height: auto;
+
+        margin-left: 10%;
+      }
+      #container7 > div {
+        width: 100%;
+        height: 50%;
+
+        margin-left: 10%;
+      }
+      #btnn {
+        display: flex;
+      }
+      a {
+        margin-bottom: 50px;
+      }
+      #sgn:hover {
+        color: pink;
+        text-decoration: none;
+      }
+      #container7 li {
+        list-style-type: none;
+        font-size: 90%;
+        color: black;
+      }
+
+      #container7 ul li:first-child {
+        margin-bottom: 10px;
+      }
+      div > p {
+        margin-top: 30px;
+      }
+      #foot {
+        color: grey;
+        border: 1px solid transparent;
+      }
+      #foot > div > p {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <div id="navbar">
+      <div class="firstHalf">
+        <img
+          src="https://coschedule.com/img/cos-logo-white.svg"
+          alt="coschedule logo"
+        />
+
+        <div>Products</div>
+        <div>Why CoSchedule</div>
+        <div>Resources</div>
+        <div>Pricing</div>
+      </div>
+      <div class="secondHalf">
+        <div>Sign In</div>
+        <div>Get A Demo</div>
+        <div>Create My Calender</div>
+      </div>
+    </div>
+
+    <!-- TOP CONTAINER -->
+
+    <div id="topContainer">
+      <p>CUSTOMER STORIES</p>
+      <h1>Organizing The World</h1>
+      <p>
+        CoSchedule helps the world’s best marketing teams take control of their
+        entire marketing strategy. See how these featured customers have found
+        success.
+      </p>
+    </div>
+
+    <!-- Cards section -->
+
+    <div id="cards">
+      <!-- Append here -->
+    </div>
+
+    <!-- ad line -->
+    <div id="ad">
+      <h1>Ready to get your marketing strategy organized?</h1>
+      <p><i>Start Your Forever-Free CoSchedule Marketing Calendar.</i></p>
+      <button>Get Started Free</button>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <div id="box8">
+        <div>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAA9CAMAAAApvJHbAAAAXVBMVEX////Xd1/WdFvWcVfUa0/Vb1TVbVL25uL79vTgno7XeWHdkoDTaEvtycHQbVbYe2Tz3djipZfv0crms6fx19HahnL57+znuK3ZgmzkrJ/sw7rbjHnemYnKY0rNaFFWYZTvAAAB40lEQVRIie2W2ZKCMBBFQ2cDWUVlUcb//8zJnqAk4KNV3qepOIe+6U66g9BPP323urG4tad2KvjH6DBnBANAlgFU3WdsXlQ4c4LJ/dDX+0buDLJQVa7XOTBanXfggmRrEQNT+VFSJ+EbfoGpDsf1R+GRhL1rwIwJr6WJbBZvKds2MlB8rjve9TywLYQvcbi2e6ZTH65zuw5tHM6pTdS4WufMwqc8Tp+Nb3Jdw9Y2tAk4rwy8cn0wMrrgrcQchFELG4mxpUrbFldDG6fqNM20mq4o3HM6Mqp1FCb/LoRdqHrEq2O2RTi1bVi8DTb+PQ/ZFlqURyxL3ZlM4ebZHIpsjzjtfWyh5hnAvIt/ZNK0OikFdXhzMraHiTByPxAbodJd1MZGVgWN9qnS7zvELdwRl9QtBTkPcJewUf8c6w419vV2uM+23hiONbaBBGfN4L7O5orTPkK/n/OS+jrr05CRaM3Gtzu2uP+9mqZYxuDY/Va7MhVg1w3OKNJbBAzadzBXNoJH+lpvrylJzrTNntqVdjVaLqP3fj63bqwlfSsFgwionCXYDRfAu9f0fY55eNiFRY1fZ6jZ87QfWep1fqvAZG9wOw2rt4NiH5+8XoYZ5LtFgnIOFx8+XfybaRkTh/Onn75C/8psEycAcillAAAAAElFTkSuQmCC"
+            alt="Error"
+          />
+          <p><a href="signup.html" style="text-decoration: none">Sign Up</a></p>
+          <p>Request A Demo</p>
+          <p><a href="signIn.html" style="text-decoration: none">Sign In</a></p>
+          <div id="container6">
+            <div>
+              <img
+                src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fg2crowd-badge.png&w=96&q=75"
+                alt="Error"
+              />
+            </div>
+            <div>
+              <img
+                src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fgartner-badge.png&w=64&q=75"
+                alt="Error"
+              />
+            </div>
+            <div>
+              <img
+                src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fforbes-badge.png&w=48&q=75"
+                alt="Error"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="container7">
+          <div>
+            <ul>
+              <li>PRODUCTS</li>
+              <li>
+                <a style="text-decoration: none" href="#">Marketing Calender</a>
+              </li>
+              <li>
+                <a style="text-decoration: none" href="#">Marketing Suite</a>
+              </li>
+              <li>
+                <a style="text-decoration: none" href="#">Headline Studio</a>
+              </li>
+              <li>
+                <a style="text-decoration: none" href="#"
+                  >Actionable Marketing Institute</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>RESOURCES</li>
+              <li>
+                <a style="text-decoration: none" href="#">Marketing Blog</a>
+              </li>
+              <li>
+                <a style="text-decoration: none" href="#">CoSchedule Guide</a>
+              </li>
+              <li>
+                <a style="text-decoration: none" href="#"
+                  >Marketing Strategy Report</a
+                >
+              </li>
+              <li>
+                <a style="text-decoration: none" href="#"
+                  >Agile Marketing Guide</a
+                >
+              </li>
+              <li>
+                <a style="text-decoration: none" href="#"
+                  >Actionable Marketing Podcast</a
+                >
+              </li>
+              <li>
+                <a style="text-decoration: none" href="#"
+                  >10x Marketing Formula Book</a
+                >
+              </li>
+              <li>
+                <a style="text-decoration: none" href="#"
+                  >Get Started With Agile Marketing Book</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="container7">
+          <div>
+            <ul>
+              <li>WHY COSCHEDULE</li>
+              <li>
+                <a style="text-decoration: none" href="#">Customer Stories</a>
+              </li>
+              <li><a style="text-decoration: none" href="#">Support</a></li>
+              <li>
+                <a style="text-decoration: none" href="#"
+                  >Product Announcements</a
+                >
+              </li>
+              <li><a style="text-decoration: none" href="#">Pricing</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>TOPIC LIBRARIES</li>
+              <li><a style="text-decoration: none" href="#">Marketing</a></li>
+              <li>
+                <a style="text-decoration: none" href="#">Marketing Ideas</a>
+              </li>
+              <li>
+                <a style="text-decoration: none" href="#">Marketing Strategy</a>
+              </li>
+              <li>
+                <a style="text-decoration: none" href="#">Content Marketing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="container7">
+          <div>
+            <ul>
+              <li>COMPANY</li>
+              <li><a style="text-decoration: none" href="#">About</a></li>
+              <li><a style="text-decoration: none" href="#">Jobs</a></li>
+              <li><a style="text-decoration: none" href="#">Contact Us</a></li>
+              <li>
+                <a style="text-decoration: none" href="#">Affiliate Program</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>TOOLS</li>
+              <li>
+                <a style="text-decoration: none" href="#">Headline Analyzer</a>
+              </li>
+              <li>
+                <a style="text-decoration: none" href="#"
+                  >Email Subject Line Tester</a
+                >
+              </li>
+              <li>
+                <a style="text-decoration: none" href="#"
+                  >Social Message Optimizery</a
+                >
+              </li>
+              <li>
+                <a style="text-decoration: none" href="#"
+                  >Marketing Dictionary</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="foot">
+        <div>
+          <p>
+            © Copyright 2022, all rights reserved. See our
+            <a>Terms & Policies</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    let data = [
+      {
+        img_url:
+          "https://media.coschedule.com/uploads/2020/04/UofSC_Alumni_P_Vertical_White_Garnet_RGB-02.png",
+        info: "This 5-Person Marketing Team Managed 12x More Work While Working Remotely",
+        button: "Read More",
+
+        href: "https://coschedule.com/customer-stories/uofsc-alumni",
+      },
+
+      {
+        img_url:
+          "https://media.coschedule.com/uploads/umass-memorial-logo-white.png",
+        info: "How This Healthcare Company Created Instant Workload Visibility Across 3 Teams With Marketing Suite by CoSchedule",
+        button: "Read More",
+
+        href: "https://coschedule.com/customer-stories/umass-memorial",
+      },
+
+      {
+        img_url: "https://media.coschedule.com/uploads/laerdal-logo-white.png",
+        info: "Laerdal’s Global Marketing Team Increased Visibility By Centralizing Their Marketing Efforts with Marketing Suite by CoSchedule",
+        button: "Read More",
+
+        href: "https://coschedule.com/customer-stories/laerdal",
+      },
+
+      {
+        img_url:
+          "https://media.coschedule.com/uploads/amp-my-brand-logo-white.png",
+        info: "How This Marketing Agency Drives Social Media Growth For 16 Franchisee Clients",
+        button: "Read More",
+
+        href: "https://coschedule.com/customer-stories/amp-my-brand",
+      },
+
+      {
+        img_url: "https://media.coschedule.com/uploads/on24-logo-white.png",
+        info: "How One Marketing Team Quadrupled Their Content And Drove 1,412% More Organic Traffic To Their Blog",
+        button: "Read More",
+        href: "https://coschedule.com/customer-stories/on24",
+      },
+
+      {
+        img_url: "https://media.coschedule.com/uploads/graebel-logo-white.png",
+        info: "How This Global Brand Transformed Complex, Multi-Tool Marketing Into A Simplified Workflow",
+        button: "Read More",
+        href: "https://coschedule.com/customer-stories/graebel",
+      },
+
+      {
+        img_url: "https://media.coschedule.com/uploads/simpleview-logo-02.png",
+        info: "Simpleview Completes 5x More Marketing Projects Every Month Using CoSchedule's Marketing Suite",
+        button: "Read More",
+        href: "https://coschedule.com/customer-stories/simpleview",
+      },
+    ];
+    displayCards(data);
+    function displayCards(data) {
+      data.forEach(function (elem) {
+        let div = document.createElement("div");
+        div.addEventListener("click", function () {
+          window.location.href = elem.href;
+          let x = elem.target;
+          console.log(x);
+        });
+        let divImg = document.createElement("div");
+        let image = document.createElement("img");
+        image.src = elem.img_url;
+        divImg.append(image);
+        let info = document.createElement("h1");
+        info.innerText = elem.info;
+        let button = document.createElement("p");
+        button.innerText = elem.button;
+
+        div.append(divImg, info, button);
+        document.querySelector("#cards").append(div);
+      });
+    }
+  </script>
+</html>
