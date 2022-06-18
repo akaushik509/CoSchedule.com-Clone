@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(248, 246, 246);
+}
+/* Navbar related css */
+
+
+#submit {
+  width: 80%;
+  margin: auto;
+  background-color: #f37e5d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: -2px;
+}
+input,
+select {
+  display: block;
+  margin: 15px 0px;
+  font-size: 20px;
+  padding: 2%;
+}
+
+form {
+  width: 400px;
+  border: 1px solid rgb(230, 230, 230);
+  margin: 3% auto;
+  padding: 3%;
+  background: white;
+  background-color: lightblue;
+  border-radius: 20px;
+}
+/* Form related css */
+h2{
+    margin-bottom: 30px;
+    color: #f37e5d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+label{
+    font-weight: bold;
+    color: #7f5fde;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    </style>
+</head>
+<body>
+    <form action="" id="form">
+        <h2>Enter Payment Details</h2>
+        <label for="Crad Number">Enter your Card Number</label><br>
+        <input placeholder="Enter Card Number" id="CN" name="cardNumber" type="number" /><br>
+        <label for="CVV">Enter CVV </label><br>
+        <input placeholder="Enter CVV" type="number" name="CVV" id="cvv" /><br>
+        <label for="expiry Date">Enter your Card expiry Date</label><br>
+        <input id="date"
+          type="date"
+          placeholder="Enter expiry Date hear"
+        /><br>
+        <label for="Name">Enter Name as per your Card</label><br>
+        <input placeholder="Enter Name as per your Card" type="text" name="Name" id="name" /><br> 
+        <input id="submit" type="submit" name="submit" value="submit" />
+      </form>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",myFunction);
+    function myFunction(){
+        event.preventDefault();
+       window.location.href="./OTP.html";
+        
+    }
+
+    
+</script>
