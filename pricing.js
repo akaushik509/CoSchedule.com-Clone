@@ -28,3 +28,9 @@ function presstwo(){
     window.location.href="signIn.html";
 }
 
+document.querySelector("#centre").addEventListener("click", punch);
+
+function punch(){
+let x= document.querySelector("#net");
+x.innerText= "$39";
+}
