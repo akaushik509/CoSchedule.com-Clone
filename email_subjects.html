@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Subjects</title>
+
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      #nav_co {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      #nav_co > a > button {
+        padding: 10px 15px;
+        font-size: 15px;
+        font-weight: 550;
+        color: white;
+        border: 2px solid white;
+        background-color: #f8ae4c;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .first {
+        max-width: 873px;
+        margin: auto;
+        color: white;
+      }
+      .first1 {
+        text-align: center;
+        line-height: 20px;
+        /* color: white; */
+      }
+
+      .first1 > img {
+        width: 123px;
+        height: 80px;
+      }
+      .first1 > h1 {
+        font-size: 50px;
+      }
+      .first1 > h3 {
+        font-size: 22px;
+      }
+      .first2 {
+        max-width: 800px;
+        margin: auto;
+        /* border: 1px solid red; */
+        margin-top: 60px;
+      }
+      form {
+        display: flex;
+        padding: 10px 23px 10px 10px;
+        background: #f79e2a;
+      }
+      input {
+        width: 70%;
+        padding: 20px;
+        font-size: 15px;
+      }
+       /* button {
+        font-size: 15px;
+        width: 110%;
+        background: #4eadd9;
+        font-weight: 550;
+        color: white;
+        border: none;
+        cursor: pointer;
+        height: 100%;
+        
+      } */
+
+      #searcher{
+        font-size: 15px;
+        width: 110%;
+        background: #4eadd9;
+        font-weight: 550;
+        color: white;
+        border: none;
+        cursor: pointer;
+        height: 100%;
+       
+      }
+
+      #last {
+        max-width: 400px;
+        font-size: 18px;
+        margin: 30px auto 0;
+        position: relative;
+        /* border: 1px solid red; */
+        text-align: center;
+        margin-top: 40px;
+        line-height: 30px;
+        margin-bottom: 80px;
+      }
+      #second {
+        width: 1268px;
+        /* border: px solid red; */
+        text-align: center;
+        margin: auto;
+        margin-top: 60px;
+        padding-bottom: 40px;
+      }
+      #second > h3 {
+        color: #f8ae4c;
+        margin-bottom: 50px;
+        font-size: 22px;
+        font-family: Merriweather, serif;
+        font-weight: 100;
+      }
+      .second1 > div > img {
+        width: 150px;
+        height: 150px;
+      }
+      .second1 {
+        display: flex;
+      }
+      .second1 > div {
+        width: 26%;
+        margin: auto;
+      }
+      .second1 > div > h3 {
+        height: 10px;
+        /* border: 1px solid red; */
+        font-size: 22px;
+        color: #373636;
+        margin-bottom: 0px;
+      }
+      .second1 > div > h4 {
+        height: 2px;
+        /* border: 1px solid red; */
+        font-size: 13px;
+        margin-bottom: 25px;
+        color: #4b4b4b;
+        font-weight: 50;
+        font-family: Merriweather, serif;
+      }
+      .second1 > div > p {
+        font-size: 16px;
+        line-height: 140%;
+        color: #4b4b4b;
+      }
+      #third {
+        max-width: 1170px;
+        /* border: 1px solid red; */
+        margin: auto;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      #main{
+        background-color: #f8f8f8!important;
+        border: 1px solid transparent;
+      }
+      .sub {
+        max-width: 1140px;
+        /* border: 1px solid green; */
+        margin: auto;
+        
+      }
+      .sub > div {
+        width: 40%;
+        /* border: 1px solid blue; */
+        margin: auto;
+        margin-top: 80px;
+        
+      }
+      .sub > div > img {
+        width: 350px;
+        height: 133px;
+        margin-top: 0px;
+      }
+      .sub > div > p{
+        width: 400px;
+       margin: auto;
+       margin-top: 20px;
+       color: #4b4b4b;
+       
+      }
+      .sub > div > h5{
+        height: 15px;
+        margin: 2px;
+      }
+      .sub > div > h4{
+        height: 15px;
+        margin: 10px 30px 35px;
+        font-weight: 550;
+         font-size: 18px;
+        color: #2f2f2f;
+      }
+      #third > h3{
+        font-size: 20px;
+        font-weight: 50;
+        color: #f8ae4c;
+        /* margin-bottom: 60px; */
+      }
+      .fourth1{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        /* border: 1px solid red; */
+        margin-bottom: 30px;
+      }
+      .fourth1 > h4{
+        font-size: 22px;
+        height: 10px;
+        color: #ffffff;
+        font-weight: 200;
+      }
+      .fourth1 > a > button{
+        box-shadow: 5px 5px 0 0 #489dd4;
+        background: #f8ae4c;
+        padding: 10px 25px;
+        font-weight: 400;
+        color: #fff;
+        font-size: 15px;
+        border:1px solid transparent ;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+      .fourth1 > a{
+        display: block;
+        margin: 10px auto;
+        color: #fff;
+        font-size: 14px;
+        text-decoration: underline;
+        height: 35px;
+      }
+      #fourth{
+        background: #4eadd9;
+        border: 1px solid transparent;
+        /* margin-bottom: -50px; */
+      }
+
+
+      /* footer */
+
+      #box8{
+        display:flex;
+        
+        margin-top:50px;
+        line-height: 20px;
+        
+        
+      }
+      #box8>div{
+        height:100%;
+        margin-left:100px;
+      }
+      #container6{
+        display: flex;
+        /* border:1px solid red; */
+        
+      }
+      #container6>div>img{
+        
+        width:1fr;
+        height:50px;
+        padding:5px;
+      }
+      #container7{
+        height:auto;
+        
+        margin-left:10%;
+        
+      }
+      #container7>div{
+        display: flex;
+        gap: 5px;
+        width:100%;
+        height:50%;
+        /* border: 1px solid red; */
+        
+        margin-left:10%;
+        /* margin-right: -20px; */
+      }
+      #btnn{
+        display:flex;
+       
+      }
+      /* a{
+        
+        margin-bottom:50px;
+      } */
+      #sgn:hover{
+        color: pink;
+        text-decoration: none;
+        
+      }
+      #container7 li{
+        list-style-type: none;
+        font-size: 90%;
+        color:black;
+      }
+
+      
+      
+      #container7  ul li:first-child{
+        margin-bottom: 10px;
+      }
+      /* div>p{
+        margin-top:30px;
+      } */
+      #foot{
+        border:1px solid transparent;
+        padding-left: 100px;
+       
+      }
+      #foot > div> p{
+        width:100%;
+      }
+      /* p{
+        color: #b4b4b4;
+      } */
+      p > a{
+        color: #b4b4b4;
+      }
+      ul{
+        margin-bottom: 70px;
+      }
+      li > a{
+        color: #b4b4b4;
+        
+      }
+
+      #footer{
+        background-color: #f8f8f8;;
+        padding-top: 50px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div style="background-color: #f8ae4c; overflow: hidden; width: 100%">
+      <div id="nav_co">
+        <img src="/WEB101_Project/logo-.png" alt="" />
+        <a href="https://coschedule.com/"><button type="submit">What is coschedule?</button></a>
+      </div>
+      <div class="first">
+        <div class="first1">
+          <img src="https://coschedule.com/img/eslt/eslt-icon.png" alt="" />
+          <h1>The # 1 Email Subject Line Tester</h1>
+          <h3>For Creating Click-Worthy Subject Lines!</h3>
+        </div>
+        <div class="first2">
+          <form>
+            <input type="text" placeholder="Type your subject line here..." />
+            <a href="/WEB101_Project/signup.html"><button type="button" id="searcher">Score My Subject Line</button></a>
+          </form>
+        </div>
+        <p id="last">
+          Write Email Subject Lines That Drive <strong>More</strong> Opens,
+          <strong>More</strong> Clicks, and <strong>More</strong> Conversations
+        </p>
+      </div>
+    </div>
+
+    <div id="second">
+      <h3>Why top-notch email subject lines matter...</h3>
+
+      <div class="second1">
+        <div class="one">
+          <img
+            src="https://coschedule.com/img/eslt/guaranteed-delivery.png"
+            alt=""
+          />
+          <h3>Guaranteed Delivery</h3>
+          <h4>(to an audience who opted-in)</h4>
+          <p>
+            You are 40x more likely to get noticed via email than on Facebook.
+            You have a captive audience who opted-in to your communication. They
+            want to hear from you! Give them a reason to OPEN your emails.
+          </p>
+        </div>
+
+        <div class="two">
+          <img
+            src="https://coschedule.com/img/eslt/drive-more-conversions.png"
+            alt=""
+          />
+          <h3>Drives More Conversion</h3>
+          <h4>(than ANY other marketing strategy)</h4>
+          <p>
+            Email drives 6x more conversions than a Twitter post. Your email is
+            targeted at an audience who CHOSE to follow you! They’re warm +
+            ready and unlike your social platforms they are product aware.
+          </p>
+        </div>
+
+        <div class="three">
+          <img src="https://coschedule.com/img/eslt/get-more-roi.png" alt="" />
+          <h3>Gets More ROI</h3>
+          <h4>(and it’s gonna be around for awhile)</h4>
+          <p>
+            Email is cheap. The average return on investment per email is $38
+            for every $1 spent. That means, write a killer email, and you can
+            start raking in the dough $$$
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="main">
+    <div id="third">
+      <h3 >How To Write Powerful Subject Lines Backed By Data...</h3>
+
+      <div class="sub">
+        <div class="sub1">
+          <h5>STEP 1</h5>
+          <h4>Capitalize on subject line characteristics that CONVERT</h4>
+          <p>
+            Write like a human talking to a human, match your subject line to
+            the content inside your email, AND don't be afraid to break the
+            rules (throw convention + formality to the wind).
+          </p>
+          <img
+            src="https://coschedule.com/img/eslt/characteristics-that-convert.png"
+            alt=""
+          />
+        </div>
+
+        <div class="sub2">
+          <h5>STEP 2</h5>
+          <h4>Optimize your character & word count for increased opens!</h4>
+          <p>
+            Create scannable, easy to digest subject lines. The right amount of
+            words—and characters—can make all the difference in your open rates!
+          </p>
+          <img
+            src="https://coschedule.com/img/eslt/character-and-word-count.png"
+            alt=""
+          />
+        </div>
+
+        <div class="sub3">
+          <h5>STEP 3</h5>
+          <h4>Harness the power of emojis.</h4>
+          <p style="margin-bottom: 10px; margin-top:-11px; ">
+            Use emojis in your subject lines to add a little personality and
+            boost open rates by as much as 57%.
+          </p>
+          <img
+            src="https://coschedule.com/img/eslt/power-of-emojis.png"
+            alt=""
+          />
+        </div>
+
+        <div class="sub4">
+          <h5>STEP 4</h5>
+          <h4>Always be testing!</h4>
+          <p style="margin-bottom: 10px; margin-top:-11px;">
+            Sure, intuition is nice BUT A/B testing tends to embarrass intuition
+            (in a good way). Thus, whenever possible, create two varying subject
+            lines and TEST those suckers!
+          </p>
+          <img src="https://coschedule.com/img/eslt/a-b-tests.png" alt="">
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div id="fourth">
+
+        <div class="fourth1">
+            <h4>Optimize Your Email Marketing With CoSchedule</h4>
+            <a href="https://coschedule.com/signup"><button>Get Started Free</button></a>
+            <a href="https://coschedule.com/">What is CoSchedule?</a>
+        </div>
+
+    </div>
+
+    <div id="footer">
+      <div id="box8">
+        <div>
+          <img style="background-color: #f8f8f8;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAA9CAMAAAApvJHbAAAAXVBMVEX////Xd1/WdFvWcVfUa0/Vb1TVbVL25uL79vTgno7XeWHdkoDTaEvtycHQbVbYe2Tz3djipZfv0crms6fx19HahnL57+znuK3ZgmzkrJ/sw7rbjHnemYnKY0rNaFFWYZTvAAAB40lEQVRIie2W2ZKCMBBFQ2cDWUVlUcb//8zJnqAk4KNV3qepOIe+6U66g9BPP323urG4tad2KvjH6DBnBANAlgFU3WdsXlQ4c4LJ/dDX+0buDLJQVa7XOTBanXfggmRrEQNT+VFSJ+EbfoGpDsf1R+GRhL1rwIwJr6WJbBZvKds2MlB8rjve9TywLYQvcbi2e6ZTH65zuw5tHM6pTdS4WufMwqc8Tp+Nb3Jdw9Y2tAk4rwy8cn0wMrrgrcQchFELG4mxpUrbFldDG6fqNM20mq4o3HM6Mqp1FCb/LoRdqHrEq2O2RTi1bVi8DTb+PQ/ZFlqURyxL3ZlM4ebZHIpsjzjtfWyh5hnAvIt/ZNK0OikFdXhzMraHiTByPxAbodJd1MZGVgWN9qnS7zvELdwRl9QtBTkPcJewUf8c6w419vV2uM+23hiONbaBBGfN4L7O5orTPkK/n/OS+jrr05CRaM3Gtzu2uP+9mqZYxuDY/Va7MhVg1w3OKNJbBAzadzBXNoJH+lpvrylJzrTNntqVdjVaLqP3fj63bqwlfSsFgwionCXYDRfAu9f0fY55eNiFRY1fZ6jZ87QfWep1fqvAZG9wOw2rt4NiH5+8XoYZ5LtFgnIOFx8+XfybaRkTh/Onn75C/8psEycAcillAAAAAElFTkSuQmCC" alt="Error">
+          <p style=" height:0px; margin-bottom: 30px;"><a href="signup.html" style="text-decoration: none;">Sign Up</a></p>
+          <p style="color: #b4b4b4;">Request A Demo</p>
+          <p  style=" margin-top: -10px; "><a href="signIn.html" style="text-decoration: none;">Sign In</a></p>
+          <div id="container6">
+            <div>
+              <img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fg2crowd-badge.png&w=96&q=75" alt="Error">
+            </div>
+            <div>
+              <img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fgartner-badge.png&w=64&q=75" alt="Error">
+            </div>
+            <div>
+              <img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fforbes-badge.png&w=48&q=75" alt="Error">
+            </div>
+          </div>
+        </div>
+        <div id="container7">
+          <div>
+            <ul>
+              <li style="font-weight:550 ;">PRODUCTS</li>
+              <li><a style="text-decoration: none; "href="#">Marketing Calender</a></li>
+              <li><a style="text-decoration: none; "href="#">Marketing Suite</a></li>
+              <li><a style="text-decoration: none; "href="#">Headline Studio</a></li>
+              <li><a style="text-decoration: none; "href="#">Actionable Marketing Institute</a></li>
+            </ul>
+                    
+          </div>
+          <div>
+            <ul>
+              <li style="font-weight:550 ;">RESOURCES</li>
+              <li><a style="text-decoration: none; "href="#">Marketing Blog</a></li>
+              <li><a style="text-decoration: none; "href="#">CoSchedule Guide</a></li>
+              <li><a style="text-decoration: none; "href="#">Marketing Strategy Report</a></li>
+              <li><a style="text-decoration: none; "href="#">Agile Marketing Guide</a></li>
+              <li><a style="text-decoration: none; "href="#">Actionable Marketing Podcast</a></li>
+              <li><a style="text-decoration: none; "href="#">10x Marketing Formula Book</a></li>
+              <li><a style="text-decoration: none; "href="#">Get Started With Agile Marketing Book</a></li>
+            </ul>
+            
+          </div>
+        </div>
+        <div id="container7">
+          <div>
+            <ul>
+              <li style="font-weight:550 ;">WHY COSCHEDULE</li>
+              <li><a style="text-decoration: none; "href="#">Customer Stories</a></li>
+              <li><a style="text-decoration: none; "href="#">Support</a></li>
+              <li><a style="text-decoration: none; "href="#">Product Announcements</a></li>
+              <li><a style="text-decoration: none; "href="#">Pricing</a></li>
+            </ul>
+            
+    
+          </div>
+          <div>
+            <ul>
+              <li style="font-weight:550 ;">TOPIC LIBRARIES</li>
+            <li><a style="text-decoration: none; "href="#">Marketing</a></li>
+            <li><a style="text-decoration: none; "href="#">Marketing Ideas</a></li>
+            <li><a style="text-decoration: none; "href="#">Marketing Strategy</a></li>
+            <li><a style="text-decoration: none; "href="#">Content Marketing</a></li>
+            </ul>
+            
+    
+          </div>
+        </div>
+        <div id="container7">
+          <div>
+            <ul>
+              <li style="font-weight:550 ;">COMPANY</li>
+              <li><a style="text-decoration: none; "href=#>About</a></li>
+              <li><a style="text-decoration: none; "href="#">Jobs</a></li>
+              <li><a style="text-decoration: none; "href="#">Contact Us</a></li>
+              <li><a style="text-decoration: none; "href="#">Affiliate Program</a></li>
+            </ul>
+            
+    
+          </div>
+          <div>
+            <ul>
+              <li style="font-weight:550 ;">TOOLS</li>
+              <li><a style="text-decoration: none; "href="#">Headline Analyzer</a></li>
+              <li><a style="text-decoration: none; "href="#">Email Subject Line Tester</a></li>
+              <li><a style="text-decoration: none; "href="#">Social Message Optimizery</a></li>
+              <li><a style="text-decoration: none; "href="#">Marketing Dictionary</a></li>
+            </ul>
+            
+              
+          </div>
+        </div>
+      </div>
+      <div id="foot">
+        <div><p>© Copyright 2022, all rights reserved. See our <a>Terms & Policies</a></p></div>
+        
+      </div>
+    </div>
+  </body>
+</html>
