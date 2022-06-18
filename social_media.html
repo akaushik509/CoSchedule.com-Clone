@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      #first {
+        background: #40a7bf
+          url(https://coschedule.com/img/smmo/smmo-background-3.png)
+          bottom/cover fixed;
+        position: relative;
+        overflow: hidden;
+      }
+
+      #nav_co {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      #nav_co > a > button {
+        padding: 10px 15px;
+        font-size: 14px;
+        font-weight: normal;
+        color: #fff;
+        border: 2px solid transparent;
+        background-color: #f37e5d;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      #nav_co > img {
+        width: 180px;
+        height: 41px;
+      }
+
+      .first1 {
+        max-width: 873px;
+        margin: auto;
+        /* color: white; */
+        margin-bottom: 50px;
+      }
+      .subFirst1 {
+        text-align: center;
+        line-height: 20px;
+        color: white;
+      }
+
+      .subFirst1 > :nth-child(1) {
+        width: 80px;
+        height: 80px;
+      }
+      .subFirst1 > :nth-child(3) {
+        /* border: 1px solid red; */
+        height: 80px;
+        /* margin-top: 10px; */
+      }
+      .subFirst1 > h1 {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        letter-spacing: 5px;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      .subFirst1 > h3 {
+        font-size: 22px;
+        font-weight: normal;
+        margin-top: 5px;
+        margin-bottom: 30px;
+      }
+      .subFirst2 > form > h6 {
+        color: #837e8a;
+        font-style: normal;
+        text-align: center;
+        font-size: 23px;
+        margin-top: 0px;
+      }
+      .subFirst2 {
+        max-width: 1160px;
+        /* border: 1px solid red; */
+      }
+      form {
+        max-width: 500px;
+        max-height: 130px;
+        margin: auto;
+        background: #f8f8f8;
+        border-radius: 4px;
+        border: 2px solid #e9e9e9;
+        padding: 20px 40px 100px;
+        position: relative;
+        box-shadow: 3px 3px 5px 0 rgb(0 0 0 / 26%);
+      }
+
+      #textarea {
+        font-family: "brandon-grotesque", sans-serif;
+        font-weight: 300;
+        background: #fff;
+        /* padding: 15px; */
+        border: 1px solid #e9e9e9;
+        color: #c1c0c3;
+        font-size: 21px;
+        text-align: center;
+        margin-top: -30px;
+        opacity: .5;
+        
+      }
+      .subFirst2 > form > button {
+        width: 45px;
+        height: 45px;
+        background: #e9e9e9;
+        font-size: 20px;
+        border: none;
+        color: #979599;
+        opacity: 2;
+        border-radius: 3px;
+      }
+      .btn1 > img,
+      .btn2 > img,
+      .btn3 > img,
+      .btn4 > img {
+        width: 20px;
+        height: 20px;
+      }
+      .btn1:hover,
+      .btn2:hover,
+      .btn3:hover,
+      .btn4:hover {
+        background-color: #f37e5d;
+        color: #fff;
+      }
+
+      .one {
+        /* background: #f37e5d; */
+        background: #e9e9e9;
+        /* opacity: 5; */
+        width: 50px;
+        height: 20px;
+        display: inline-block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        padding: 14px 0;
+        margin-top: 0px;
+        text-align: center;
+        border-radius: 4px;
+        color: #de1623;
+        /* opacity:5; */
+      }
+      .one1 {
+        background-image: url(https://coschedule.com/img/smmo/text-icon-white.png);
+        font-size: 22px;
+        color: #060508;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 25px;
+        width: 25px;
+        position: relative;
+        top: 1px;
+        display: inline-block;
+        font-family: "Glyphicons Halflings";
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+      }
+      .one1::before {
+        content: "";
+      }
+
+      #second {
+        width: 1068px;
+
+        /* border: 1px solid red; */
+        text-align: center;
+        margin: auto;
+        margin-bottom: -10px;
+        margin-top: -20px;
+      }
+      #second > h3 {
+        color: #fff;
+        margin-bottom: 50px;
+        font-size: 35px;
+        font-family: Merriweather, serif;
+        font-weight: 100;
+      }
+      .second1 > div > img {
+        width: 130px;
+        height: 140px;
+        margin-top: -20px;
+        margin-bottom: -20px;
+      }
+      .second1 {
+        display: flex;
+      }
+      .second1 > div {
+        width: 20%;
+        margin: auto;
+        /* border: 1px solid green; */
+      }
+      .second1 > div > h5 {
+        height: 15px;
+        /* border: 1px solid red; */
+        font-size: 15px;
+        color: #fff;
+        font-weight: 400;
+      }
+      .second1 > div > p {
+        font-size: 15px;
+        /* line-height: 140%; */
+        color: #fff;
+        max-width: 240px;
+        margin: auto;
+        margin-top: -10px;
+      }
+      #head {
+        background: #a0cc83;
+        padding: 80px 20px;
+        overflow: hidden;
+        z-index: 0;
+        clear: both;
+      }
+      #main {
+        max-width: 1790px;
+        /* border: 1px solid green; */
+      }
+      .third {
+        max-width: 900px;
+        /* border: 1px solid red; */
+        margin: auto;
+        text-align: center;
+        margin-top: 80px;
+      }
+      .third > h2 {
+        font-size: 30px;
+        line-height: 130%;
+        letter-spacing: -0.3px;
+        padding: 0 150px;
+        color: #4b4b4b;
+        font-weight: 400;
+        font-family: "MuseoSans-700", sans-serif;
+        margin-bottom: 10px;
+      }
+      strong {
+        font-weight: bold;
+      }
+      .third > h6 {
+        font-size: 18px;
+        font-family: "MuseoSans-100", sans-serif;
+        font-style: italic;
+        font-weight: 100;
+        height: 20px;
+        margin-top: 0px;
+      }
+      .third > img {
+        max-width: 650px;
+        padding: 0px 120px;
+        margin: auto;
+      }
+      #submit {
+        width: 180px;
+        font-size: 15px;
+        margin-left: 121px;
+        background-color: #f37e5d;
+        color: #fff;
+      }
+
+      #outer {
+        max-width: 1798px;
+        /* border: 1px solid red; */
+      }
+      .fourth {
+        max-width: 1200px;
+        /* border: 1px solid green; */
+        margin: auto;
+        display: flex;
+      }
+      .fourth > :first-child {
+        /* border: 1px solid red; */
+        width: 600px;
+      }
+      .fourth2 > h2 {
+        font-size: 25px;
+        font-family: "MuseoSans-300", sans-serif;
+        padding-right: 170px;
+        color: #fff;
+        line-height: 35px;
+      }
+      .fourth2 > h3 {
+        font-size: 17px;
+        font-weight: 100;
+        font-family: "Merriweather", serif;
+        font-style: italic;
+        padding-right: 110px;
+        line-height: 28px;
+        color: #fff;
+      }
+      .fourth2 > a > button {
+        font-weight: normal;
+        font-family: "MuseoSans-700", sans-serif;
+        color: #fff;
+        font-size: 13px;
+        padding: 15px 35px;
+        background: #f37e5d;
+        border: none;
+        cursor: pointer;
+      }
+      .fourth2 {
+        margin-top: 55px;
+      }
+      #outer {
+        background: #40a7bf;
+        overflow: hidden;
+      }
+
+      /* socio 1 */
+
+     
+      .unit1 {
+        display: flex;
+        justify-content: space-between;
+      }
+      .unit1 > div {
+        display: flex;
+
+      }
+      .unit1 > :last-child > img {
+        width: 25px;
+        height: 20px;
+        margin-right: 10px;
+        margin-top: 10px;
+      }
+
+      .unit1 > div > div {
+        display: flex;
+        flex-direction: column;
+        font-size: 13px;
+        margin-top: 10px;
+      }
+      .unit1 > div > div > a {
+        text-decoration: none;
+        color: rgb(83, 100, 113);
+      }
+      .unit1 > div > a > img {
+        width: 40px;
+        border-radius: 100%;
+        margin-top: 8px;
+        margin-right: 2px;
+        padding-left: 10px;
+      }
+      #socio {
+        width: 1347px;
+        /* border: 1px solid red; */
+        margin-bottom: 50px;
+        /* margin-top: 50px; */
+        padding-top: 50px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        
+      }
+      .socio1 {
+        border: 1px solid #919090;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 23%;
+        /* margin: auto; */
+        border-radius: 10px;
+      }
+      .unit2 {
+        font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        line-height: 20px;
+        font-size: 15px;
+        font-weight: 200;
+        margin-top: 10px;
+        padding-left: 10px;
+      }
+      .unit2 > a{
+        text-decoration: none;
+      }
+      .unit3 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: -10px;
+      }
+      .unit3 > a > img {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+        border: 1px solid transparent;
+        border-radius: 100%;
+        padding: 3px;
+      }
+      .unit3 > a > img:hover {
+        background-color: #73b859;
+      }
+      .unit3 > a {
+        text-decoration: none;
+        font-size: 13px;
+        color: #4b4b4b;
+      }
+      hr {
+        color: #4b4b4b;
+        width: 90%;
+        margin-bottom: 0%;
+      }
+      .unit4 {
+        display: flex;
+        /* border: 1px solid red; */
+        height: 25px;
+        margin-top: 0px;
+        padding-top: 0px;
+      }
+      .unit4 > span > a > img {
+        width: 30px;
+        /* border: 1px solid red; */
+        height: 25px;
+        margin-right: 1px;
+      }
+      .unit4 > span > a {
+        margin-right: 15px;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        color: #4b4b4b;
+        /* border: 1px solid red; */
+        padding: 2px;
+        height: 25px;
+        margin-top: 0;
+        text-decoration: none;
+      }
+      .unit4 > span:hover {
+        color: green;
+        border: red;
+      }
+      .unit5 {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+      }
+      .unit5 > a > button{
+        padding: 3px 45px;
+        font-size: 12px;
+        border-radius: 10px;
+        border: .5px solid #817e7e;
+        background: transparent;
+        color: rgb(0, 111, 214);
+        font-weight: 550;
+      }
+
+
+      /* Footer */
+
+
+      #box8{
+        display:flex;
+        
+        margin-top:50px;
+        line-height: 20px;
+        
+        
+      }
+      #box8>div{
+        height:100%;
+        margin-left:100px;
+      }
+      #container6{
+        display: flex;
+        /* border:1px solid red; */
+        
+      }
+      #container6>div>img{
+        
+        width:1fr;
+        height:50px;
+        padding:5px;
+      }
+      #container7{
+        height:auto;
+        
+        margin-left:10%;
+        
+      }
+      #container7>div{
+        display: flex;
+        gap: 5px;
+        width:100%;
+        height:50%;
+        /* border: 1px solid red; */
+        
+        margin-left:10%;
+        /* margin-right: -20px; */
+      }
+      #btnn{
+        display:flex;
+       
+      }
+     
+      #sgn:hover{
+        color: pink;
+        text-decoration: none;
+        
+      }
+      #container7 li{
+        list-style-type: none;
+        font-size: 90%;
+        color:black;
+      }
+
+      
+      
+      #container7  ul li:first-child{
+        margin-bottom: 10px;
+      }
+     
+      #foot{
+        border:1px solid transparent;
+        padding-left: 100px;
+       
+      }
+      #foot > div> p{
+        width:100%;
+      }
+      p{
+        color: #b4b4b4;
+      }
+      p > a{
+        color: #b4b4b4;
+      }
+      ul{
+        margin-bottom: 70px;
+      }
+      li > a{
+        color: #b4b4b4;
+        
+      }
+      #container{
+        background-color: #f8f8f8;
+        /* height: 100%; */
+        height: 900px;
+        /* border: 1px solid red; */
+      }
+      
+
+    </style>
+  </head>
+  <body>
+    <div id="first">
+      <div id="nav_co">
+        <img src="https://coschedule.com/img/cos-logo-full-color.svg" alt="" />
+        <a href="https://coschedule.com/"
+          ><button type="submit">What is coschedule?</button></a
+        >
+      </div>
+
+      <div class="first1">
+        <div class="subFirst1">
+          <img src="https://coschedule.com/img/smmo/smmo-icon.png" alt="" />
+          <h1>THE #1 SOCIAL MESSAGE</h1>
+          <img src="/PicsArt_06-17-09.47.33.2.png" alt="" />
+          <h3>For Creating Click-Worthy Subject Lines!</h3>
+        </div>
+
+        <div class="subFirst2">
+          <form>
+            <h6>Enter your message to begin optimization:</h6>
+            <textarea 
+              name="message"
+              id="textarea"
+              cols="43"
+              rows="4"
+              placeholder="Type your social message here...";
+            ></textarea>
+
+            <button class="btn1">
+              <img
+                src="https://coschedule.com/img/smmo/text-icon-gray.png"
+                alt=""
+              />
+            </button>
+            <button class="btn2">
+              <img
+                src="https://coschedule.com/img/smmo/image-icon-white.png"
+                alt=""
+              />
+            </button>
+            <button class="btn3">
+              <img
+                src="https://coschedule.com/img/smmo/video-icon-gray.png"
+                alt=""
+              />
+            </button>
+            <button class="btn4">
+              <img
+                src="https://coschedule.com/img/smmo/link-icon-white.png"
+                alt=""
+              />
+            </button>
+            <button id="submit" type="button">Score My Message!</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="head">
+      <div id="second">
+        <h3>Optimize your social messages, so you can:</h3>
+
+        <div class="second1">
+          <div id="sub">
+            <img
+              src="https://coschedule.com/img/smmo/smmo-boost-engagement.png"
+              alt=""
+            />
+            <h5>BOOST ENGAGEMENT</h5>
+
+            <p>
+              Capture more eyeballs with your messages and get even more likes,
+              comments, shares, and clicks. Optimize your messages according to
+              best practices and real data!
+            </p>
+          </div>
+
+          <div id="two">
+            <img
+              src="https://coschedule.com/img/smmo/smmo-build-trust.png"
+              alt=""
+            />
+            <h5>BUILD TRUST</h5>
+
+            <p>
+              Connect with your audience (in a human way)! Add a lil’
+              personality AND build trust with your audience with the RIGHT
+              message.
+            </p>
+          </div>
+
+          <div class="three">
+            <img
+              src="https://coschedule.com/img/smmo/smmo-drive-traffic.png"
+              alt=""
+            />
+            <h5>DRIVE TRAFFIC</h5>
+
+            <p>
+              Craft enticing social messages that attract the right audience,
+              drive traffic back to your content, and ultimately CONVERT.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="main">
+      <div class="third">
+        <h2>
+          How To Craft Powerful Messages for <strong>EVERY</strong> Social
+          Network
+        </h2>
+        <h6>(backed by real data and CoSchedule nerds)</h6>
+
+        <img
+          src="https://coschedule.com/img/smmo/smmo-how-it-works.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div id="outer">
+      <div class="fourth">
+        <img
+          src="https://coschedule.com/img/smmo/SMO-template-mockup.png"
+          alt=""
+        />
+
+        <div class="fourth2">
+          <h2>Looking for that extra boost in your social messages?</h2>
+          <h3>
+            Check Out This FREE Download Of Message Templates To Craft Your Best
+            Message.
+          </h3>
+          <a href="https://coschedule.com/img/smmo/SMO-template.pdf">
+            <button>Download Now</button></a
+          >
+        </div>
+      </div>
+    </div>
+
+  <div id="container">
+    <div id="socio">
+      <div class="socio1">
+        <div class="unit1">
+          <div>
+            <a
+              href="https://twitter.com/caitlinhonard?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E730469288453230592%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+              ><img
+                src="https://pbs.twimg.com/profile_images/927230910877065217/3w4kQvTR_400x400.jpg"
+                alt=""
+            /></a>
+
+            <div>
+              <a
+                style="color: rgb(15, 20, 25)"
+                href="https://twitter.com/caitlinhonard?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E730469288453230592%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+                >Caitlin Honard</a
+              >
+              <a
+                href="https://twitter.com/caitlinhonard?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E730469288453230592%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+                >@caitlinhonard</a
+              >
+            </div>
+          </div>
+          <a
+            href="https://twitter.com/caitlinhonard/status/730469288453230592?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E730469288453230592%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+            ><img
+              src="https://cuttingedgepr.com/wp-content/uploads/2015/02/Twitter-logo.jpg"
+              alt=""
+          /></a>
+        </div>
+
+        <div class="unit2">
+          <span>If you're only using</span>
+          <a
+            href="https://twitter.com/CoSchedule?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E730469288453230592%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+            >@coschedule</a
+          >
+          <span>to schedule your blog posts, you're missing out big time!</span>
+          <a
+            href="https://twitter.com/caitlinhonard/status/730469288453230592?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E730469288453230592%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+            >bit.ly/1Wpdvbo
+          </a>
+          <a
+            href="https://twitter.com/caitlinhonard/status/730469288453230592?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E730469288453230592%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+            >https://pic.twitter.com/WiYUJ9w9R6</a
+          >
+        </div>
+
+        <div class="unit3">
+          <a
+            href="https://twitter.com/caitlinhonard/status/730469288453230592?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E730469288453230592%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+            >12:17 AM . May 12,2016</a
+          >
+          <a
+            href="https://help.twitter.com/en/twitter-for-websites-ads-info-and-privacy"
+            ><img
+              src="data:image/png;base64,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"
+              alt=""
+          /></a>
+        </div>
+
+        <hr />
+
+        <div class="unit4">
+          <span>
+            <a
+              href="https://twitter.com/intent/like?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E730469288453230592%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer&tweet_id=730469288453230592"
+              ><img
+                src="data:image/png;base64,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"
+                alt=""
+              />
+              <h5>3</h5></a
+            >
+          </span>
+          <span>
+            <a
+              href="https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E730469288453230592%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer&in_reply_to=730469288453230592"
+              ><img
+                style="width: 20px"
+                src="https://www.clipartmax.com/png/middle/160-1601201_speach-bubble-speech-bubble-transparent-background.png"
+                alt=""
+              />
+              <h5>Reply</h5></a
+            >
+          </span>
+          <span>
+            <a
+              href="https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E730469288453230592%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer&in_reply_to=730469288453230592"
+            ><img
+            src="https://i.pinimg.com/originals/82/50/eb/8250ebbe710fdc11dc3332e02ad7cf42.jpg"
+            alt=""
+          />
+          <h5>Share</h5></a>
+          </span>
+        </div>
+
+        <div class="unit5">
+          <a href="https://twitter.com/caitlinhonard/status/730469288453230592?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E730469288453230592%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+          ><button>Explore what's happening on Twitter</button></a>
+        </div>
+        </div>
+      
+
+
+      <div class="socio1">
+        <div class="unit1">
+          <div>
+            <a
+              href="https://twitter.com/ChristinKardos?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E859919853540573186%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+              ><img
+                src="https://pbs.twimg.com/profile_images/1045015172870524928/q8OxISAI_400x400.jpg"
+                alt=""
+            /></a>
+
+            <div>
+              <a
+                style="color: rgb(15, 20, 25)"
+                href="https://twitter.com/ChristinKardos?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E859919853540573186%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+                >Christin Kardos 🌟 #CMGR, backseat h.</a
+              >
+              <a
+                href="https://twitter.com/ChristinKardos?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E859919853540573186%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+                >@ChristinKardos</a
+              >
+            </div>
+          </div>
+          <a
+            href="https://twitter.com/ChristinKardos/status/859919853540573186?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E859919853540573186%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+            ><img
+              src="https://cuttingedgepr.com/wp-content/uploads/2015/02/Twitter-logo.jpg"
+              alt=""
+          /></a>
+        </div>
+
+        <div class="unit2">
+          <span>Fun, helpful</span>
+          <a
+            href="https://twitter.com/ChristinKardos/status/859919853540573186?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E859919853540573186%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+            > #tool</a
+          >
+          <span>alert!> Write Better Social Messages w/</span>
+          <a
+            href="https://twitter.com/hashtag/SocialMedia?src=hashtag_click"
+            > #SocialMedia 
+          </a>
+          <span>Message Optimizer From</span>
+          <a
+            href="https://twitter.com/CoSchedule?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E859919853540573186%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+            > 
+            @CoSchedule</a
+          >
+          <a href="https://twitter.com/ChristinKardos/status/859919853540573186?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E859919853540573186%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer">http://candc.ly/2pGL10k #smm</a>
+
+          <a href="https://twitter.com/ChristinKardos/status/859919853540573186?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E859919853540573186%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer">pic.twitter.com/sj8vNxtnsi</a>
+
+        </div>
+
+        <div class="unit3">
+          <a
+            href="https://twitter.com/ChristinKardos/status/859919853540573186?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E859919853540573186%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+            >5:25 AM . May 4,2017</a
+          >
+          <a
+            href="https://help.twitter.com/en/twitter-for-websites-ads-info-and-privacy"
+            ><img
+              src="data:image/png;base64,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"
+              alt=""
+          /></a>
+        </div>
+
+        <hr />
+
+        <div class="unit4">
+          <span>
+            <a
+              href="https://twitter.com/intent/like?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E859919853540573186%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer&tweet_id=859919853540573186"
+              ><img
+                src="data:image/png;base64,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"
+                alt=""
+              />
+              <h5>6</h5></a
+            >
+          </span>
+          <span>
+            <a
+              href="https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E859919853540573186%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer&in_reply_to=859919853540573186"
+              ><img
+                style="width: 20px"
+                src="https://www.clipartmax.com/png/middle/160-1601201_speach-bubble-speech-bubble-transparent-background.png"
+                alt=""
+              />
+              <h5>Reply</h5></a
+            >
+          </span>
+          <span>
+            <a
+              href="https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E859919853540573186%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer&in_reply_to=859919853540573186"
+            ><img
+            src="https://i.pinimg.com/originals/82/50/eb/8250ebbe710fdc11dc3332e02ad7cf42.jpg"
+            alt=""
+          />
+          <h5>Share</h5></a>
+          </span>
+        </div>
+
+        <div class="unit5">
+          <a href="https://twitter.com/ChristinKardos/status/859919853540573186?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E859919853540573186%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+          ><button>Read 2 replies</button></a>
+        </div>
+        </div>
+      
+
+
+      <div class="socio1" , style="height: 210px;">
+        <div class="unit1" >
+          <div>
+            <a
+              href="https://twitter.com/TerryWritesCopy?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E726865425427009536%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+              ><img
+                src="https://pbs.twimg.com/profile_images/1247249676941787138/cWJlBvfd_400x400.jpg"
+                alt=""
+            /></a>
+
+            <div>
+              <a
+                style="color: rgb(15, 20, 25)"
+                href="https://twitter.com/TerryWritesCopy?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E726865425427009536%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+                >Terry Simpson Jr</a
+              >
+              <a
+                href="https://twitter.com/TerryWritesCopy?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E726865425427009536%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+                >@TerryWritesCopy</a
+              >
+            </div>
+          </div>
+          <a
+            href="https://twitter.com/TerryWritesCopy/status/726865425427009536?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E726865425427009536%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+            ><img
+              src="https://cuttingedgepr.com/wp-content/uploads/2015/02/Twitter-logo.jpg"
+              alt=""
+          /></a>
+        </div>
+
+        <div class="unit2">
+          <!-- <span>If you're only using</span> -->
+          <a
+            href="https://twitter.com/TerryWritesCopy/status/726865425427009536?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E726865425427009536%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+            >#Socialmedia</a
+          >
+          <span>on steroids, use</span>
+          <a
+            href="https://twitter.com/hashtag/coschedule?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E726865425427009536%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer&src=hashtag_click"
+            > #coschedule
+          </a>
+
+          <span> to get out the message.</span>
+
+          <a
+            href="https://coschedule.com/calendar-referral?utm_campaign=referral_program&utm_medium=link&utm_content=47265&utm_source=unknown.com"
+            >http://bit.ly/1q7vdTb</a
+          >
+        </div>
+
+        <div class="unit3">
+          <a
+            href="https://twitter.com/TerryWritesCopy/status/726865425427009536?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E726865425427009536%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+            >1:36 AM . May 2,2016</a
+          >
+          <a
+            href="https://help.twitter.com/en/twitter-for-websites-ads-info-and-privacy"
+            ><img
+              src="data:image/png;base64,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"
+              alt=""
+          /></a>
+        </div>
+
+        <hr />
+
+        <div class="unit4">
+          <span>
+            <a
+              href="https://twitter.com/intent/like?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E726865425427009536%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer&tweet_id=726865425427009536"
+              ><img
+                src="data:image/png;base64,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"
+                alt=""
+              />
+              <h5>1</h5></a
+            >
+          </span>
+          <span>
+            <a
+              href="https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E726865425427009536%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer&in_reply_to=726865425427009536"
+              ><img
+                style="width: 20px"
+                src="https://www.clipartmax.com/png/middle/160-1601201_speach-bubble-speech-bubble-transparent-background.png"
+                alt=""
+              />
+              <h5>Reply</h5></a
+            >
+          </span>
+          <span>
+            <a
+              href="https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E726865425427009536%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer&in_reply_to=726865425427009536"
+            ><img
+            src="https://i.pinimg.com/originals/82/50/eb/8250ebbe710fdc11dc3332e02ad7cf42.jpg"
+            alt=""
+          />
+          <h5>Share</h5></a>
+          </span>
+        </div>
+
+        <div class="unit5">
+          <a href="https://twitter.com/TerryWritesCopy/status/726865425427009536?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E726865425427009536%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+          ><button>Explore what's happening on Twitter</button></a>
+        </div>
+      </div>
+      
+
+
+      <div class="socio1", style="width: 22%;">
+        <div class="unit1">
+          <div>
+            <a
+              href="https://twitter.com/aPaleovangelist?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E713096320303636481%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+              ><img
+                src="https://pbs.twimg.com/profile_images/557303243030556672/yXUl2gMC_400x400.jpeg"
+                alt=""
+            /></a>
+
+            <div>
+              <a
+                style="color: rgb(15, 20, 25)"
+                href="https://twitter.com/aPaleovangelist?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E713096320303636481%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+                >Danielle Gagnon</a
+              >
+              <a
+                href="https://twitter.com/aPaleovangelist?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E713096320303636481%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+                >@aPaleovangelist</a
+              >
+            </div>
+          </div>
+          <a
+            href="https://twitter.com/aPaleovangelist/status/713096320303636481?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E713096320303636481%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+            ><img
+              src="https://cuttingedgepr.com/wp-content/uploads/2015/02/Twitter-logo.jpg"
+              alt=""
+          /></a>
+        </div>
+
+        <div class="unit2">
+          <span>I cannot begin to describe the joy in my heart that </span>
+          <a
+            href="https://twitter.com/CoSchedule?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E730469288453230592%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+            >@coschedule</a
+          >
+          <span>now has a</span>
+          <a
+            href="https://twitter.com/hashtag/Pinterest?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E713096320303636481%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer&src=hashtag_click"
+            >#Pinterest
+          </a>
+
+          <span> integration! Makes life SO much easier :)</span>
+
+          <a
+            href="https://twitter.com/hashtag/foodblogger?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E713096320303636481%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer&src=hashtag_click"
+            > #foodblogger</a
+          >
+        </div>
+
+        <div class="unit3">
+          <a
+            href="https://twitter.com/aPaleovangelist/status/713096320303636481?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E713096320303636481%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+            >1:43 AM . Mar 25,2016</a
+          >
+          <a
+            href="https://help.twitter.com/en/twitter-for-websites-ads-info-and-privacy"
+            ><img
+              src="data:image/png;base64,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"
+              alt=""
+          /></a>
+        </div>
+
+        <hr />
+
+        <div class="unit4">
+          <span>
+            <a
+              href="https://twitter.com/intent/like?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E713096320303636481%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer&tweet_id=713096320303636481"
+              ><img
+                src="data:image/png;base64,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"
+                alt=""
+              />
+              <h5>2</h5></a
+            >
+          </span>
+          <span>
+            <a
+              href="https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E713096320303636481%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer&in_reply_to=713096320303636481"
+              ><img
+                style="width: 20px"
+                src="https://www.clipartmax.com/png/middle/160-1601201_speach-bubble-speech-bubble-transparent-background.png"
+                alt=""
+              />
+              <h5>Reply</h5></a
+            >
+          </span>
+          <span>
+            <a
+              href="https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E713096320303636481%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer&in_reply_to=713096320303636481"
+            ><img
+            src="https://i.pinimg.com/originals/82/50/eb/8250ebbe710fdc11dc3332e02ad7cf42.jpg"
+            alt=""
+          />
+          <h5>Share</h5></a>
+          </span>
+        </div>
+
+        <div class="unit5">
+          <a href="https://twitter.com/aPaleovangelist/status/713096320303636481?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E713096320303636481%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcoschedule.com%2Fsocial-message-optimizer"
+          ><button>Read 1 reply</button></a>
+        </div>
+        </div>
+    </div>
+
+
+
+    <div style="height: 300px; margin-top:100px; ">
+
+      <div id="box8">
+        <div>
+          <img style=" margin-bottom: -30px; " src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAA9CAMAAAApvJHbAAAAXVBMVEX////Xd1/WdFvWcVfUa0/Vb1TVbVL25uL79vTgno7XeWHdkoDTaEvtycHQbVbYe2Tz3djipZfv0crms6fx19HahnL57+znuK3ZgmzkrJ/sw7rbjHnemYnKY0rNaFFWYZTvAAAB40lEQVRIie2W2ZKCMBBFQ2cDWUVlUcb//8zJnqAk4KNV3qepOIe+6U66g9BPP323urG4tad2KvjH6DBnBANAlgFU3WdsXlQ4c4LJ/dDX+0buDLJQVa7XOTBanXfggmRrEQNT+VFSJ+EbfoGpDsf1R+GRhL1rwIwJr6WJbBZvKds2MlB8rjve9TywLYQvcbi2e6ZTH65zuw5tHM6pTdS4WufMwqc8Tp+Nb3Jdw9Y2tAk4rwy8cn0wMrrgrcQchFELG4mxpUrbFldDG6fqNM20mq4o3HM6Mqp1FCb/LoRdqHrEq2O2RTi1bVi8DTb+PQ/ZFlqURyxL3ZlM4ebZHIpsjzjtfWyh5hnAvIt/ZNK0OikFdXhzMraHiTByPxAbodJd1MZGVgWN9qnS7zvELdwRl9QtBTkPcJewUf8c6w419vV2uM+23hiONbaBBGfN4L7O5orTPkK/n/OS+jrr05CRaM3Gtzu2uP+9mqZYxuDY/Va7MhVg1w3OKNJbBAzadzBXNoJH+lpvrylJzrTNntqVdjVaLqP3fj63bqwlfSsFgwionCXYDRfAu9f0fY55eNiFRY1fZ6jZ87QfWep1fqvAZG9wOw2rt4NiH5+8XoYZ5LtFgnIOFx8+XfybaRkTh/Onn75C/8psEycAcillAAAAAElFTkSuQmCC" alt="Error">
+          <p style=" height:0px; margin-top: 30px;  margin-bottom: 20px;"><a href="signup.html" style="text-decoration: none; ">Sign Up</a></p>
+          <p>Request A Demo</p>
+          <p  style=" margin-top: -10px; "><a href="signIn.html" style="text-decoration: none;">Sign In</a></p>
+          <div id="container6">
+            <div>
+              <img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fg2crowd-badge.png&w=96&q=75" alt="Error">
+            </div>
+            <div>
+              <img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fgartner-badge.png&w=64&q=75" alt="Error">
+            </div>
+            <div>
+              <img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fforbes-badge.png&w=48&q=75" alt="Error">
+            </div>
+          </div>
+        </div>
+        <div id="container7">
+          <div>
+            <ul>
+              <li style="font-weight:550 ;">PRODUCTS</li>
+              <li><a style="text-decoration: none; "href="#">Marketing Calender</a></li>
+              <li><a style="text-decoration: none; "href="#">Marketing Suite</a></li>
+              <li><a style="text-decoration: none; "href="#">Headline Studio</a></li>
+              <li><a style="text-decoration: none; "href="#">Actionable Marketing Institute</a></li>
+            </ul>
+                    
+          </div>
+          <div>
+            <ul>
+              <li style="font-weight:550 ;">RESOURCES</li>
+              <li><a style="text-decoration: none; "href="#">Marketing Blog</a></li>
+              <li><a style="text-decoration: none; "href="#">CoSchedule Guide</a></li>
+              <li><a style="text-decoration: none; "href="#">Marketing Strategy Report</a></li>
+              <li><a style="text-decoration: none; "href="#">Agile Marketing Guide</a></li>
+              <li><a style="text-decoration: none; "href="#">Actionable Marketing Podcast</a></li>
+              <li><a style="text-decoration: none; "href="#">10x Marketing Formula Book</a></li>
+              <li><a style="text-decoration: none; "href="#">Get Started With Agile Marketing Book</a></li>
+            </ul>
+            
+          </div>
+        </div>
+        <div id="container7">
+          <div>
+            <ul>
+              <li style="font-weight:550 ;">WHY COSCHEDULE</li>
+              <li><a style="text-decoration: none; "href="#">Customer Stories</a></li>
+              <li><a style="text-decoration: none; "href="#">Support</a></li>
+              <li><a style="text-decoration: none; "href="#">Product Announcements</a></li>
+              <li><a style="text-decoration: none; "href="#">Pricing</a></li>
+            </ul>
+            
+    
+          </div>
+          <div>
+            <ul>
+              <li style="font-weight:550 ;">TOPIC LIBRARIES</li>
+            <li><a style="text-decoration: none; "href="#">Marketing</a></li>
+            <li><a style="text-decoration: none; "href="#">Marketing Ideas</a></li>
+            <li><a style="text-decoration: none; "href="#">Marketing Strategy</a></li>
+            <li><a style="text-decoration: none; "href="#">Content Marketing</a></li>
+            </ul>
+            
+    
+          </div>
+        </div>
+        <div id="container7">
+          <div>
+            <ul>
+              <li style="font-weight:550 ;">COMPANY</li>
+              <li><a style="text-decoration: none; "href="#">About</a></li>
+              <li><a style="text-decoration: none; "href="#">Jobs</a></li>
+              <li><a style="text-decoration: none; "href="#">Contact Us</a></li>
+              <li><a style="text-decoration: none; "href="#">Affiliate Program</a></li>
+            </ul>
+            
+    
+          </div>
+          <div>
+            <ul>
+              <li style="font-weight:550 ;">TOOLS</li>
+              <li><a style="text-decoration: none; "href="#">Headline Analyzer</a></li>
+              <li><a style="text-decoration: none; "href="#">Email Subject Line Tester</a></li>
+              <li><a style="text-decoration: none; "href="#">Social Message Optimizery</a></li>
+              <li><a style="text-decoration: none; "href="#">Marketing Dictionary</a></li>
+            </ul>
+            
+              
+          </div>
+        </div>
+      </div>
+      <div id="foot">
+        <div><p>© Copyright 2022, all rights reserved. See our <a>Terms & Policies</a></p></div>
+        
+      </div>
+
+
+    </div>
+
+  </div>
+  </body>
+</html>
+
+<script>
+  // document.querySelector("#submit").addEventListener("click",function(){
+  //   window.location.href = "/WEB101_Project/signup.html";
+  // })
+
+  let btn = document.querySelector("#submit");
+  btn.addEventListener("click",myFun);
+
+  function myFun(event){
+    event.preventDefault();
+    console.log("yes");
+    window.location.href = "/WEB101_Project/signup.html"
+  }
+</script>

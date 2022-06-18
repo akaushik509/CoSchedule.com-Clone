@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Headline</title>
+
+    <style>
+      #main{
+        background-color: #fafbff;
+        padding-bottom: 30px;
+        margin-top: 0px;
+        width: 100%;
+      }
+      #nav {
+        display: flex;
+        justify-content: space-between;
+        /* fill: url(#blue-deco_svg__blue_hatching); */
+      }
+      
+      #nav > a > button {
+        /* display: grid; */
+        justify-self: end;
+        align-self: end;
+        justify-content: flex-end;
+        font-family: "museoSans-700", sans-serif;
+        margin-top: -30px;
+        margin-right: 10px;
+        font-size: 15px;
+        border: none;
+        background-color: transparent;
+        font-weight: 550;
+        color: blue;
+        max-width: 90px;
+      }
+      #nav > img {
+        width: 250px;
+        padding-left: 20px;
+      }
+      #dem {
+        line-height: 20px;
+        text-align: center;
+        /* margin: 50px 0px 5px; */
+        max-width: 850px;
+        margin: auto;
+        margin-bottom: 80px;
+        margin-top: 70px;
+      }
+      #dem > h1 {
+        font-size: 45px;
+        color: #474747;
+      }
+      #dem > p {
+        font-size: 18px;
+      }
+      .one {
+        background-color: white;
+        box-shadow: 2px 2px 20px 0 rgb(0 0 0 / 20%);
+        position: relative;
+        z-index: 2;
+        margin: 40px auto 20px;
+        padding: 40px;
+      }
+      form {
+        display: flex;
+      }
+      input {
+        border: 1px solid #618be0;
+        padding: 10px 15px;
+        height: 40px;
+        width: 70%;
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+      }
+      button {
+        max-width: 200;
+        /* height: 40px; */
+        margin-left: 20px;
+        width: 25%;
+        font-size: 100%;
+        line-height: 1.15;
+        border-radius: 3px;
+        border: none;
+        background-color: #c1d6f4;
+        color: white;
+      }
+      .download {
+        font-size: 13px;
+        margin-top: 40px;
+      }
+      .download > a {
+        color: #80c37b;
+      }
+      .second1 > h3 {
+        font-size: 22px;
+        margin: 20px 0px 0px;
+        color: #474747;
+      }
+      #second {
+        max-width: 1170px;
+        margin: auto;
+        /* padding-left: 100px; */
+      }
+      .second1 {
+        margin: auto;
+        text-align: center;
+        padding: 50px 20px;
+        line-height: 5px;
+      }
+      .second1 > p {
+        line-height: 170%;
+        padding: 0px 20px;
+        font-size: 23px;
+        color: #618be0;
+      }
+      .second1 {
+        max-width: 600px;
+      }
+      .second2 {
+        /* border: 1px solid red; */
+        /* text-align: center; */
+        margin: auto;
+      }
+      .second2 > h2 {
+        font-size: 30px;
+        text-align: center;
+        color: #474747;
+        margin-bottom: 67px;
+      }
+      .second2 > div {
+        max-width: 800px;
+      }
+      .second2 > div > div > div > img {
+        width: 40px;
+        height: 43px;
+        background-color: #c3d1ed;
+        border: 1px solid #618be0;
+        border-radius: 5px;
+      }
+      .detail {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+      }
+      .detail > div {
+        display: flex;
+        flex-wrap: rap;
+        flex-direction: row;
+        width: 370px;
+        height: 120px;
+        margin-left: 30px;
+      }
+      .detail > div > div:last-child {
+        height: 80px;
+        line-height: 1px;
+        /* border: 1px solid red; */
+        margin-right: 60px;
+        /* letter-spacing: -.3px; */
+      }
+      .detail > div > div:last-child > h4 {
+        /* border: 1px solid green; */
+        margin-top: 8px;
+        font-size: 18px;
+        margin-bottom: 2px;
+      }
+      .detail > div > div:last-child > p {
+        line-height: 20px;
+        font-size: 17px;
+        color: #474747;
+      }
+      .detail > div > div:first-child {
+        margin-right: 15px;
+      }
+
+      #third {
+        background-color: #618be0;
+        overflow: hidden;
+        margin: auto;
+        width: 100%;
+        background-size: auto;
+        height: 465px;
+      }
+      #third > div {
+        max-width: 1170px;
+        display: flex;
+      }
+      .third1 {
+        width: 1000px;
+        /* border: 1px solid red; */
+      }
+      .third1 > h2 {
+        font-size: 30px;
+        color: white;
+        margin-left: 110px;
+        margin-top: 80px;
+      }
+      .third1 > a::before {
+        background-image: url(https://coschedule.com/img/headline-studio/chrome-logo.svg);
+        content: "";
+        background-size: 40px;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-color: hsla(0, 0%, 100%, 0.3);
+        border-radius: 2px 0 0 2px;
+        position: absolute;
+        width: 60px;
+        height: 48px;
+        top: 0;
+        left: 0;
+      }
+      .third1 > a {
+        background-color: #6ac694;
+        color: white;
+        position: relative;
+        padding-left: 75px;
+        display: inline-block;
+        min-width: 250px;
+        box-sizing: border-box;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-image: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: MuseoSans-700, sans-serif;
+        font-size: 15px;
+        font-weight: 450;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+        padding-right: 2px;
+        margin-left: 110px;
+      }
+      li {
+        line-height: 5px;
+        list-style-type: none;
+        margin-left: 70px;
+      }
+      ul {
+        margin-top: 40px;
+        margin-bottom: 60px;
+        width: 550px;
+        color: white;
+      }
+      .third2 > img{
+        
+        width: 100%;
+        
+     }
+     .third2{
+      
+      width: 65%;
+     }
+     .fourth{
+      max-width: 1100px;
+      display: grid;
+      grid-template-columns: repeat(2,auto);
+      grid-template-rows: repeat(2,auto);
+      /* border: 1px solid red; */
+      margin: auto;
+      align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+     }
+     .fourth > div:first-child > img{
+      width: 35px;
+      height: 47px;
+     }
+    .fourth > div:first-child > a{
+      text-decoration: none;
+      color:#474747;
+      cursor: pointer;
+     } 
+     .fourth > div:first-child{
+     display: flex;
+      align-items: center;
+    flex-wrap: wrap;
+    
+     }
+     .fourth > div:nth-child(2){
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: right;
+      justify-self: end;
+      gap: 20px;
+
+     }
+     .fourth > div > a{
+      text-decoration: none;
+      color:#474747;
+      cursor: pointer;
+
+     }
+     .fourth > div > a:hover{
+      text-decoration: underline;
+     }
+     .fourth > div:nth-child(3) > p >a{
+      color:#474747;
+     }
+     .fourth > div:nth-child(3) > p{
+      color:#474747;
+     }
+     .fourth > div:nth-child(4) > p{
+      color:#474747;
+     }
+     .fourth > div:nth-child(4) > img{
+      width: 120px;
+      height: 27px;
+      margin-left: 10px;
+     }
+     .fourth > div:nth-child(4){
+      display: flex;
+      align-items: center;
+      text-align: right;
+      justify-self: end;
+      margin-top: 20px;
+      margin-bottom: 30px;
+     }
+
+    </style>
+  </head>
+  <body>
+
+    <div id="main">
+    <div id="nav">
+      <img src="/WEB101_Project/img.jpg" alt="" />
+      <a href="/WEB101_Project/signIn.html"><button >SignIN</button></a>
+    </div>
+    <div id="dem">
+      <h1>The #1 Free Headline Analyzer</h1>
+      <p>Write Headlines That Drive Traffic, Shares, And Search Results</p>
+
+      <div class="one">
+        <form>
+          <input type="text" placeholder="Type your headline here..." />
+          <button type="button" id="subOn">Analyze Now</button>
+        </form>
+      </div>
+      <p class="download">
+        Get the FREE Headline Studio Browser Extension.
+        <a
+          href="https://chrome.google.com/webstore/detail/headline-studio-by-cosche/jbnbhbmnbpfaohgjcljlcbgnelclkaae"
+          >Download Now</a
+        >
+      </p>
+    </div>
+  </div>
+
+    <div id="second">
+      <div class="second1">
+        <h3>Why top-notch headlines matter...</h3>
+        <p>
+          "On average, 5x as many people read the headline as read the body
+          copy. When you’ve written your headline, you’ve spent eighty cents out
+          of your dollar."
+        </p>
+        <h5 style="color: #787878; margin-top: 0px">DAVID OGILVY</h5>
+      </div>
+
+      <div class="second2">
+        <h2>Write powerful headlines backed by data.</h2>
+        <div class="detail">
+          <div>
+            <div>
+              <img
+                src="https://coschedule.com/img/headline-studio/headline-analyzer/ha-icon-word-balance.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h4>Word Balance</h4>
+              <p>Captivate your audience with the right word balance.</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://coschedule.com/img/headline-studio/headline-analyzer/ha-icon-headline-type.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h4>Headline Type</h4>
+              <p>Capitalize on the types of headlines that convert.</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://coschedule.com/img/headline-studio/headline-analyzer/ha-icon-sentiment.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h4>Sentiment</h4>
+              <p>Gauge the type of emotion your headline conveys.</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://coschedule.com/img/headline-studio/headline-analyzer/ha-icon-word-count.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h4>Word Count</h4>
+              <p>Optimize the number of words to drive engagement.</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://coschedule.com/img/headline-studio/headline-analyzer/ha-icon-character-count.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h4>Character Count</h4>
+              <p>
+                Reach the ideal number of characters improve SEO readability.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://coschedule.com/img/headline-studio/headline-analyzer/ha-icon-skimmability.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h4>Skimmability</h4>
+              <p>
+                Discover whether your headline is easily understood at a glance.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://coschedule.com/img/headline-studio/headline-analyzer/ha-icon-clarity.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h4>Clarity</h4>
+              <p>
+                Determine where your headline can be simplified for easier
+                reading.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://coschedule.com/img/headline-studio/headline-analyzer/ha-icon-reading-grade-level.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h4>Reading Grade Level</h4>
+              <p>
+                Measure the readability of your headline based on grade level.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="third">
+      <div>
+        <div class="third1">
+          <h2>Get the FREE Headline Studio Browser Extension.</h2>
+          <a
+            href="https://chrome.google.com/webstore/detail/headline-studio-by-cosche/jbnbhbmnbpfaohgjcljlcbgnelclkaae"
+            >Get The Free Extension</a
+          >
+
+          <ul>
+            <li>
+              <h4>History</h4>
+              <p>Revisit a complete history of all your past headlines.</p>
+            </li>
+            <li>
+              <h4>Favorites</h4>
+              <p>Save your favorite headlines to keep them organized.</p>
+            </li>
+            <li>
+              <h4>Thesaurus</h4>
+              <p>
+                Choose a more effective word from power + emotional word banks.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="third2">
+          <img
+            src="https://coschedule.com/_next/image?url=%2Fimg%2Fheadline-studio%2Fhs-feature-browser-extension.png&w=1920&q=75"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="fourth">
+        <div>
+          <img src="/WEB101_Project/logo.jpeg" alt="">
+          <a href="/WEB101_Project/signIn.html">Sign In</a>
+        </div>
+        <div>
+          <a href="/WEB101_Project/signup.html">Sign Up</a>
+          <a href="https://coschedule.com/headline-studio/browser-extension">Browser Extension</a>
+          <a href="https://coschedule.com/support/contact">Contact Us</a>
+        </div>
+        <div>
+          <p>
+            © Copyright 2022, all rights reserved. See our
+            <a href="https://coschedule.com/terms">Terms & Policies.</a>
+          </p>
+        </div>
+        <div>
+          <p>A PRODUCT OF</p>
+          <img src="https://coschedule.com/img/cos-logo-full-color.svg" alt="" >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script>
+  document.querySelector("#subOn").addEventListener("click",function(){
+    window.location.href = "/WEB101_Project/signIn.html";
+  })
+</script>
