@@ -1,0 +1,154 @@
+
+        @import url(//db.onlinewebfonts.com/c/b1de76f2d448dcdf44d092114d6ba04a?family=Museo+Sans+700);
+        @font-face {font-family: "Museo Sans 700"; src: url("//db.onlinewebfonts.com/t/b1de76f2d448dcdf44d092114d6ba04a.eot"); src: url("//db.onlinewebfonts.com/t/b1de76f2d448dcdf44d092114d6ba04a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b1de76f2d448dcdf44d092114d6ba04a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b1de76f2d448dcdf44d092114d6ba04a.woff") format("woff"), url("//db.onlinewebfonts.com/t/b1de76f2d448dcdf44d092114d6ba04a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b1de76f2d448dcdf44d092114d6ba04a.svg#Museo Sans 700") format("svg"); }
+      body {
+        background-color: #f8f8f8;
+        font-family: 'Museo Sans 700';
+      }
+      #navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f8f8f8;
+      }
+      #logo{
+        margin: 4px;
+        height: 50px;
+    }
+      #search {
+        display: flex;
+        width: 20%;
+        justify-content: space-around;
+        align-items: center;
+      }
+      input#searchbar{
+        border: 0.5px solid grey;
+      }
+      input#searchbar::placeholder{
+        color: grey;
+      }
+      input#searchbar:focus{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border: none;
+        outline: none;
+        
+      }
+      #searchbar {
+        width: 75%;
+        height: 30px;
+        border-radius: 15px;
+      }
+      #heading1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #main {
+        width: 60%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px;
+      }
+      #main > div {
+        height: 444px;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        /* border: 1px solid green; */
+      }
+      #main > div img {
+        width: 100%;
+      }
+
+
+
+      #foot-content{
+        margin-top: 100px;
+      }
+      #foot-content h2{
+        text-align: center;
+        font-family: 'Museo Sans 700';
+
+      }
+      #content{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+
+
+
+      #box8{
+        display:flex;
+        justify-content: center;
+        margin-top:50px;
+        
+      }
+      #box8>div{
+        height:100%;
+        margin-left:100px;
+      }
+      #container6{
+        display: flex;
+        /* border:1px solid red; */
+        
+      }
+      #container6>div>img{
+        
+        width:1fr;
+        height:50px;
+        padding:5px;
+      }
+      #container7{
+        height:auto;
+        
+        margin-left:10%;
+        
+      }
+      #container7>div{
+        width:100%;
+        height:50%;
+        
+        margin-left:10%;
+      }
+      #btnn{
+        display:flex;
+       
+      }
+      a{
+        color: grey;
+        line-height: 25px;
+        margin-bottom:50px;
+      }
+      #foot a{
+        color: grey;
+        text-decoration: underline;
+      }
+      #sgn:hover{
+        color: pink;
+        text-decoration: none;
+        
+      }
+      #container7 li{
+        list-style-type: none;
+        font-size: 90%;
+        color:black;
+      }
+
+      
+      
+      #container7  ul li:first-child{
+        margin-bottom: 10px;
+      }
+      div>p{
+        margin-top:30px;
+      }
+
+      #foot > div{
+        width: 65%;
+        margin: auto;
+        font-size: small;
+        font-weight: lighter;
+      }
+    
