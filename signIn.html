@@ -96,10 +96,12 @@
     console.log(flag);
 
     if (flag) {
-      alert("Great");
+      alert("You Are Successfully Logged In.");
+      localStorage.setItem("system","online");
       window.location.href = "homepage.html";
     } else {
       alert("Wrong ID/Password");
+
       window.location.reload();
     }
   }
